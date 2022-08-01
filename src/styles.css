@@ -159,6 +159,13 @@ img {
     letter-spacing: 5px;
 }
 
+.block__text2 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
 @keyframes mainBlock {
     0% {
         width: 0%;
