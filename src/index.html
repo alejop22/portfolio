@@ -4,8 +4,187 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack</title>
+    <title>Alejandro Palacio | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 </head>
 <body>
+    <div class="container_loading">
+        <div class="box">
+
+            <div class="title">
+                <span class="block"></span>
+                <h2 class="block__title">Alejandro Palacio<span></span></h2>
+            </div>
+
+            <div class="role">
+                <div class="block"></div>
+                <p class="block__text">Full Stack Developer</p>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <nav class="nav container" id="nav">
+            <img src="" alt="">
+            <ul id="menu" class="options">
+                <li data-menuanchor="inicio" class="active"><a href="#home">Inicio</a> </li>
+                <li data-menuanchor="sobre"><a href="#about">Sobre mí</a></li>
+                <li data-menuanchor="proyectos"><a href="#portfolio">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="mobile">
+        <a class="mobile__link" href="#home">
+            <i class="fa-solid fa-house mobile__icon"></i>
+            <p class="mobile__text">Inicio</p>
+        </a>
+
+        <a class="mobile__link" href="#about">
+            <i class="fa-solid fa-user mobile__icon"></i>
+            <p class="mobile__text">Sobre mí</p>
+        </a>
+        <a class="mobile__link" href="#portfolio">
+            <i class="fa-solid fa-pen-ruler mobile__icon"></i>
+            <p class="mobile__text">Proyectos</p>
+        </a>
+    </nav>
+    <section class="social-media">
+        <div class="box center">
+            <a href="https://twitter.com/Alejop06" target="_blank" data-text="Twitter">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alejandropp/" target="_blank" data-text="Linkedin">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a href="https://github.com/alejop22" target="_blank" data-text="Github">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+        </div>
+    </section>
+    <main class="main" id="home">
+        <div class="main__grid container">
+            <section class="main__title">
+                <h1>HOLA, SOY ALEJANDRO PALACIO</h1>
+                <span class="main__typed" id="typed"></span>
+            </section>
+            <img class="main__img" src="https://res.cloudinary.com/dc3i4vyci/image/upload/v1659375416/tecwbxnvcgo8opk6cnhf.png" alt="Full Stack Developer | Alejandro Palacio">
+        </div>
+    </main>
+    <section class="about" id="about">
+        <div class="about__flex container">
+            <div class="about__grid container">
+                <img class="about__img" src="https://res.cloudinary.com/dc3i4vyci/image/upload/v1659382151/okpbj2kzx7ho5wv39uuu.svg" alt="Full Stack Developer | Alejandro Palacio">
+                <div class="about__info">
+                    <div class="about__story">
+                        <h2 class="about__heading">Mi historia</h2>
+                        <p class="about__text">
+                            Soy tecnólogo en sistemas y Full Stack JavaScript Developer siempre caracterizado por la buena actitud
+                            y la resiliencia en situaciones difíciles, con mentalidad de aprendizaje constante.
+                            <br><br>
+                            Con un año de experiencia en desarrollo de software para el sector financiero, he tenido la oportunidad
+                            de colaborar en proyectos desafiantes donde verdaderamente aprendí el valor del trabajo en equipo y soluciones
+                            a problemas muy específicos.
+                        </p>
+                        <a href="assets/Alejandro Palacio - CV - Full Stack Developer.pdf" target="_blank" class="about__cv">Descargar CV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="about__skills">
+                <h2 class="about__heading">Mis habilidades y herramientas</h2>
+                <div class="about__container">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original-wordmark.svg" width="90" alt="node JS" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg" width="90" alt="react JS" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/express/express-original-wordmark.svg" width="90" alt="express" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/sequelize/sequelize-original-wordmark.svg" width="90" alt="sequelize" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/redux/redux-original.svg" width="90" alt="redux" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/java/java-original-wordmark.svg" width="90" alt="java" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg" width="90" alt="javascript" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/html5/html5-original-wordmark.svg" width="90" alt="html" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-original-wordmark.svg" width="90" alt="css" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original-wordmark.svg" width="90" alt="postgreSQL" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mysql/mysql-original-wordmark.svg" width="90" alt="MySQL" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/git/git-original-wordmark.svg" width="90" alt="GIT" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/github/github-original-wordmark.svg" width="90" alt="GITHUB" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/heroku/heroku-original-wordmark.svg" width="90" alt="heroku" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/firebase/firebase-plain-wordmark.svg" width="90" alt="firebase" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original-wordmark.svg" width="90" alt="node JS" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg" width="90" alt="react JS" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__grid container">
+            <nav class="social-footer">
+                <a class="social-footer__link" href="https://twitter.com/Alejop06" target="_blank">
+                    <i class="fa-brands fa-twitter social-footer__icon"></i>
+                </a>
+                <a class="social-footer__link" href="https://www.linkedin.com/in/alejandropp/"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin-in social-footer__icon"></i>
+                </a>
+                <a class="social-footer__link" href="https://github.com/alejop22" target="_blank">
+                    <i class="fa-brands fa-github social-footer__icon"></i>
+                </a>
+            </nav>
+            <p class="footer__copyright">
+                Hecho con ❤ by Alejandro Palacio 
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
