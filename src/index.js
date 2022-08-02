@@ -1,13 +1,12 @@
 import './styles.css';
 
-/* Typing animation */
 window.onload = function () {
-    var typed = new Typed('#typed', {
+    const typed = new Typed('#typed', {
         strings: [
-            "Front-end Developer", "Puedes decirme Goraycode",
-            `<i class="far fa-heart"></i>         
+            "Full Stack Developer",
+            `<i class="fa-solid fa-heart"></i>        
             <i class="fas fa-laptop-code"></i>
-            <i class="far fa-heart"></i>    `],
+            <i class="fa-solid fa-heart"></i>    `],
         backSpeed: 100,
         smartBackspace: true,
         backDelay: 1500,
@@ -17,26 +16,19 @@ window.onload = function () {
     });
 };
 
-/* loading */
 
 const container = document.querySelector('.container_loading');
 let identificadorTiempoDeEspera;
 
 
-/* projects */
-const projects = document.querySelector('.portfolio__grid');
-
-//El body inicial no tiene el scroll
 document.body.classList.add('withoutOverflow');
 document.addEventListener('DOMContentLoaded', () => {
 
-    identificadorTiempoDeEspera = setTimeout(ocultarCarga, 7000);
-    projectsOcultos();
+    identificadorTiempoDeEspera = setTimeout(ocultarCarga, 5800);
 })
 
 function ocultarCarga() {
 
-    //culmina la carga, quitamos la clase quye evita el scroll
     document.body.classList.remove('withoutOverflow');
 
     container.classList.add('oculto');
