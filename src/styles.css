@@ -159,13 +159,6 @@ img {
     letter-spacing: 5px;
 }
 
-.block__text2 {
-    color: #fff;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
 @keyframes mainBlock {
     0% {
         width: 0%;
@@ -684,6 +677,29 @@ h1 {
     }
 }
 
+.proyectos__heading {
+    color: var(--third-color-light);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.proyectos__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+    .proyectos__container {
+        padding: 8rem 0;
+    }
+}
+
 .slide img:hover {
     opacity: 1;
     transform: scale(1.1);
@@ -705,11 +721,10 @@ h1 {
     background: #f4fbff;
 }
 
- 
 .event img
 {
-    width: 480px;
-    height: 200px;
+    width: 40rem;
+    height: 17rem;
     object-fit: cover;
 }
 
@@ -717,7 +732,7 @@ h1 {
 {
     margin: 20px 40px;
     margin-top: -40px;
-    background-color: white;
+    background-color: #EEEEEE;
     position: relative;
     padding: 20px;
     text-align: center;
@@ -780,6 +795,85 @@ h1 {
         margin: -2em .5em .5em;
         padding: 1em;
     }
+}
+
+.carousel__container {
+    position: relative;
+}
+
+
+.carousel__prev,
+.carousel__next {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 40%;
+}
+
+.carousel__prev:hover,
+.carousel__next:hover {
+    opacity: 100%;
+}
+
+.carousel__prev {
+    left: -30px;
+}
+
+.carousel__next {
+    right: -30px;
+}
+
+.carousel__list {
+    overflow: hidden;
+}
+
+.carousel__element {
+    color: var(--third-color-light);
+    display: block;
+    text-align: center;
+}
+
+.carousel__element img {
+    margin: 0;
+    text-align: center;
+    height: 200px;
+    border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+    .carousel__element img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 430px) {
+    .carousel__element img {
+        height: 125px;
+    }
+}
+
+.carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    opacity: .2;
+}
+
+.carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+    opacity: .5;
 }
 
 .footer {

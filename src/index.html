@@ -5,23 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandro Palacio | Full Stack Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
+    <script src="https://kit.fontawesome.com/98e9aa7f8b.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
 </head>
 <body>
     <div class="container_loading">
@@ -44,35 +39,38 @@
             <ul id="menu" class="options">
                 <li data-menuanchor="inicio" class="active"><a href="#home">Inicio</a> </li>
                 <li data-menuanchor="sobre"><a href="#about">Sobre mí</a></li>
-                <li data-menuanchor="proyectos"><a href="#portfolio">Proyectos</a></li>
+                <li data-menuanchor="proyectos"><a href="#events">Proyectos</a></li>
             </ul>
         </nav>
     </header>
     <nav class="mobile">
         <a class="mobile__link" href="#home">
-            <i class="fa-solid fa-house mobile__icon"></i>
+            <i class="fas fa-laptop-house mobile__icon"></i>
             <p class="mobile__text">Inicio</p>
         </a>
 
         <a class="mobile__link" href="#about">
-            <i class="fa-solid fa-user mobile__icon"></i>
+            <i class="fas fa-address-card mobile__icon"></i>
             <p class="mobile__text">Sobre mí</p>
         </a>
-        <a class="mobile__link" href="#portfolio">
-            <i class="fa-solid fa-pen-ruler mobile__icon"></i>
+        <a class="mobile__link" href="#events">
+            <i class="fas fa-briefcase mobile__icon"></i>
             <p class="mobile__text">Proyectos</p>
         </a>
     </nav>
     <section class="social-media">
         <div class="box center">
-            <a href="https://twitter.com/Alejop06" target="_blank" data-text="Twitter">
-                <i class="fab fa-twitter fa-2x"></i>
+            <a href="https://wa.link/nbc4jb" target="_blank" data-text="WhastApp">
+                <i class="fab fa-whatsapp fa-2x"></i>
             </a>
             <a href="https://www.linkedin.com/in/alejandropp/" target="_blank" data-text="Linkedin">
                 <i class="fab fa-linkedin-in fa-2x"></i>
             </a>
             <a href="https://github.com/alejop22" target="_blank" data-text="Github">
                 <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/Alejop06" target="_blank" data-text="Twitter">
+                <i class="fab fa-twitter fa-2x"></i>
             </a>
         </div>
     </section>
@@ -81,10 +79,6 @@
             <section class="main__title">
                 <h1>HOLA, SOY ALEJANDRO PALACIO</h1>
                 <span class="main__typed" id="typed"></span>
-                <!-- <div class="role">
-                    <div class="block"></div>
-                    <p class="block__text2">Full Stack Developer</p>
-                </div> -->
             </section>
             <img class="main__img" src="https://res.cloudinary.com/dc3i4vyci/image/upload/v1659375416/tecwbxnvcgo8opk6cnhf.png" alt="Full Stack Developer | Alejandro Palacio">
         </div>
@@ -171,7 +165,8 @@
         </div>
         </div>
     </section>
-    <section id="eventos" class="event-list">
+    <section id="events" class="event-list proyectos__container container">
+        <h2 class="proyectos__heading">Últimos Proyectos</h2>
         <article class="event">
             <figure class="event-imageContainer">
                 <img class="event-image" src="https://res.cloudinary.com/dc3i4vyci/image/upload/v1659384939/i601sam5m6bne6uq0eil.png" alt="PsicoApp" width="500" />
@@ -210,7 +205,7 @@
             </figure>
             <div class="event-detail">
                 <h3 class="event-title">Clothesstore</h3>
-                <p class="event-description">eCommerce ficticio de ropa y accesorios consumiendo el API de mercado libre.</p>
+                <p class="event-description">eCommerce ficticio de ropa y accesorios consumiendo el API de Mercado Libre.</p>
                 <div class="card__links">
                     <a class="event-url" href="https://clothesstore-client.vercel.app/" target="_blank">Demo</a>
                     <a class="card__link" href="https://github.com/alejop22/clothesstore-client"
@@ -231,18 +226,70 @@
             </div>
         </article>
     </section>
+    <section class="carousel">
+        <h2 class="about__heading">Recomendaciones</h2>
+        <div class="carousel__container container">
+            <button aria-label="Anterior" class="carousel__prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="carousel__list container">
+                <div class="carousel__element">
+                    <img src="https://media-exp1.licdn.com/dms/image/D5635AQEXRHpj2zct4w/profile-framedphoto-shrink_800_800/0/1656996980998?e=1660078800&v=beta&t=RdERe8-sS5Vy9KZtcErwe5xCHdTOzZzXW7lcC60ZR_E" alt="Compañero Miguel Tovar">
+                    <h3>Miguel Tovar</h3>
+                    <p class="about__text">Alejandro es una persona proactiva, con la capacidad de solucionar de problemas complejos, colaborador en equipo y dispuesto a ayudar a sus compañeros, se maneja muy bien en el frontend y tiene un buen razonamiento lógico. 
+                    Fue un placer tenerlo como compañero de equipo, por su gran aporte para el mismo.</p>
+                </div>
+                <div class="carousel__element">
+                    <img src="https://media-exp1.licdn.com/dms/image/D4D35AQGvlCsibn8sxw/profile-framedphoto-shrink_800_800/0/1650117729945?e=1659636000&v=beta&t=fItxv8DIdIC1BWDymeYddTVhhOAIRiK_cC4TaOzOoqE" alt="Compañero Ezequiel Faszczak">
+                    <h3>Ezequiel Faszczak</h3>
+                    <p class="about__text">Tuve el placer de haber compartido un proyecto junto a Alejandro y puedo decir que es una gran persona,
+                    con muchos conocimientos tanto en el frontend como en el backend, ademas de tener la capacidad de analizar y resolver problemas de manera rápida y efectiva.</p>
+                </div>
+                <div class="carousel__element">
+                    <img src="https://media-exp1.licdn.com/dms/image/D4D35AQHUqjfkzSmGWg/profile-framedphoto-shrink_800_800/0/1657901752345?e=1659970800&v=beta&t=b2vADSGJ7WtgqjuNxcQ0VQwjxYqTWnFYJHne2D2HKcM" alt="Compañero Tomás Ledesma">
+                    <h3>Tomás Ledesma</h3>
+                    <p class="about__text">Alejandro es un excelente compañero, tuve la oportunidad de compartir equipo con él, aunque no dentro del
+                    mismo sector, esto me permitió notar que tiene habilidades muy solidas en lo que lógica del Frontend respecta. Maneja un muy bien
+                    pensamiento lógico, sabe encontrar y solucionar bugs fácilmente y además tiene una muy buena comunicación dentro del equipo.</p>
+                </div>
+                <div class="carousel__element">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFuJS1hN3HeYA/profile-displayphoto-shrink_800_800/0/1658157042746?e=1665014400&v=beta&t=drEzB_pzwWMJSPhkXRP56D2EF3vF5ZWzRKj-tWkkd8o" alt="Compañero Jhoskar Toro">
+                    <h3>Jhoskar Toro</h3>
+                    <p class="about__text">Alejandro es una gran persona y un gran programador, tiene una alta capacidad para analizar y resolver
+                    problemas, absorve y aprende cualquier conocimiento que se proponga rapidamente y es de muy facil adaptacion a cualquier proyecto
+                    o tarea en la que se desempeño!</p>
+                </div>
+                <div class="carousel__element">
+                    <img src="https://pablo-causa.netlify.app/static/media/ProfilePicture.07cabc01698743cf6de4.jpg" alt="Compañero Pablo Causa">
+                    <h3>Pablo Causa</h3>
+                    <p class="about__text">Alejandro had a set of skills that allowed him to address any task in the project. He worked in the Front End
+                    of the project, showing strong knowledge of the field and solving any issue that arose. Also, he knew how to work as a team,
+                    cleaning all the doubts of the members during the development.</p>
+                </div>
+            </div>
+
+            <button aria-label="Siguiente" class="carousel__next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div role="tablist" class="carousel__indicadores"></div>
+    </section>
     <footer class="footer">
         <div class="footer__grid container">
             <nav class="social-footer">
-                <a class="social-footer__link" href="https://twitter.com/Alejop06" target="_blank">
-                    <i class="fa-brands fa-twitter social-footer__icon"></i>
+                <a href="https://wa.link/nbc4jb" target="_blank" data-text="WhastApp">
+                    <i class="fab fa-whatsapp social-footer__icon"></i>
                 </a>
                 <a class="social-footer__link" href="https://www.linkedin.com/in/alejandropp/"
                     target="_blank">
-                    <i class="fa-brands fa-linkedin-in social-footer__icon"></i>
+                    <i class="fab fa-linkedin-in social-footer__icon"></i>
                 </a>
                 <a class="social-footer__link" href="https://github.com/alejop22" target="_blank">
-                    <i class="fa-brands fa-github social-footer__icon"></i>
+                    <i class="fab fa-github social-footer__icon"></i>
+                </a>
+                <a class="social-footer__link" href="https://twitter.com/Alejop06" target="_blank">
+                    <i class="fab fa-twitter social-footer__icon"></i>
                 </a>
             </nav>
             <p class="footer__copyright">
@@ -250,6 +297,6 @@
             </p>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 </body>
 </html>
