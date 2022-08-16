@@ -43,9 +43,7 @@ window.addEventListener('load', () => {
         ]
     });
 
-})
-
-
+});
 
 const container = document.querySelector('.container_loading');
 let identificadorTiempoDeEspera;
